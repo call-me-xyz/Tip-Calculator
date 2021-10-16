@@ -21,9 +21,7 @@
           <input type="text" id="billamt" placeholder="Bill Amount" />
         </p>
         <form>
-        <p>How was your service?</p>
-        <p>
-          <label for="serviceQual"></label>
+          <label for="serviceQual">How was your service?</label>
           <select id="serviceQual">
             <option value="0" selected>-- Choose an option--</option>
             <option value="0.15">15% - Outstanding</option>
@@ -31,14 +29,13 @@
             <option value="0.05">05% - It was ok</option>
           </select>
         </form>
-        </p>
         <p>How many people are sharing the bill?</p>
-        <input id="peopleamt" type="text" placeholder="Number of people" />
+        <input id="peopleamt" type="number" placeholder="Number of people" />
         <span>people</span>
-        <p><button id="calculate">Calculate!</button></p>
+        <button id="calculate">Calculate!</button>
       </div>
       <!-- calculator end -->
-
+      
       <div id="totalTip">
         <sup>Rs.</sup> <span id="tip">0.00</span>
         <small id="each">each</small>
