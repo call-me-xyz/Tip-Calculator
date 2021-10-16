@@ -5,7 +5,7 @@ function claculateTip() {
     var numofPeople = document.getElementById("peopleamt").value;
 
   // validate input
-  if (billAmt === "" || serviceQual == 0) {
+    if (billAmt === "" || serviceQual == 0) {
     alert("Please enter values");
     return;
   }
@@ -35,3 +35,12 @@ document.getElementById("each").style.display = "none";
 document.getElementById("calculate").onclick = function () {
   claculateTip();
 };
+
+// reset button to clear all fields
+function resetCalc() {
+   document.getElementById("billamt").value = "";
+   document.getElementById("serviceQual").value = "0";
+   document.getElementById("peopleamt").value = "";
+   document.getElementById("totalTip").style.display = "none";
+   document.getElementById("each").style.display = "none";
+}
