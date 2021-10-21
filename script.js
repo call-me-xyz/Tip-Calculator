@@ -5,15 +5,19 @@ function claculateTip() {
     var numofPeople = document.getElementById("peopleamt").value;
 
   // validate input
-  if (billAmt === "" || serviceQual == 0) {
-    alert("Please enter values");
+  if (billAmt === "") {
+    alert("Please enter Bill Amount");
     return;
+  }
+  if(serviceQual == 0){
+    alert("Please provide feedback on service ");
   }
 
   // check to see if the input is empty or less than or equal to 1
   if (numofPeople === "" || numofPeople <= 1) {
     numofPeople = 1;
     document.getElementById("each").style.display = "none";
+    alert("Please enter number of people");
   } else {
     document.getElementById("each").style.display = "block";
   }
