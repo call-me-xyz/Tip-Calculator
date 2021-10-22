@@ -1,31 +1,39 @@
 body {
-  font-family: "Bitter", serif;
   font-size: larger;
-  background-color: #2a7979;
+  background-image: url("https://cdn-media-2.freecodecamp.org/w1280/5fb5e53749c47664ed822a29.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: auto; */
+  /* width: 200%; */
 }
 
 .container {
-  height: 700px;
-  width: 500px;
-  margin: 100px auto;
-  background: #f7f7f7;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  height: 600px;
+  width: 480px;
+  margin: 8% 0% 0% 55%;
+  background: #ffffff;
+  /* opacity: 0.9; */
+  box-shadow: 0px 0px 0px rgb(0 0 0 / 10%);
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 h1 {
-  background-color: brown;
+  background-color: rgb(19, 56, 221);
   color: white;
-  margin: 0px;
-  padding: 10px 160px;
+  margin: 0px 0px 0px 0px;
+  padding: 14px 158px;
   text-transform: uppercase;
-  font-size: 18px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  font-size: 21px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: "Noto Sans", sans-serif;
 }
-
+h1:hover {
+  text-decoration: 2px underline;
+}
 p {
   padding-left: 20px;
 }
@@ -39,77 +47,132 @@ input {
 }
 
 #billamt {
-  font-size: 14px;
-  color: #2980b9;
-  background-color: #f7f7f7;
-  width: 60%;
-  padding: 5px 5px 8px 8px;
+  font-size: 15px;
+  font-weight: 100;
+  width: 56%;
+  padding: 10px 0px 10px 8px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 3px solid #39cccc;
+  font-family: "Ubuntu", sans-serif;
 }
 
 #billamt:focus {
   background: #fff;
-  border: 3px solid #2980b9;
+  border-radius: 5px;
+  border-bottom: 3px solid #39cccc;
   outline: none;
 }
 
 #peopleamt {
   width: 60%;
-  padding: 5px 5px 8px 8px;
+  padding: 10px 0px 10px 8px;
   margin: 20px;
   color: #2980b9;
-  background-color: #f7f7f7;
+  border: none;
+  border-bottom: 3px solid #39cccc;
+  border-radius: 5px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
 }
 
 #serviceQual {
-  padding: 13px 13px 20px 20px;
-  margin-left: 20px;
-  font-size: 25px;
+  padding: 10px 0px 10px 8px;
+  margin-left: 0px;
+  font-size: 15px;
+  width: 65%;
+  border: none;
+  border-bottom: 3px solid #39cccc;
+  border-radius: 5px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 button {
   text-transform: uppercase;
   font-weight: bold;
   display: block;
-  margin: 30px auto;
-  background: #ad133a;
+  margin: 30px 0px 30px 0px;
+  background-color: #39cccc;
+  border: none;
   border-radius: 5px;
   width: 200px;
   height: 50px;
   font-size: 17px;
-  color: white;
+  color: #fff;
 }
 
 button:hover {
-  background: #4c2827;
-  border-bottom-color: #111;
+  background: rgb(19, 56, 221);
+  border: 4px solid #39cccc;
+  border-radius: 5px;
 }
 
 button:active {
   position: relative;
   top: 1px;
 }
-
 #totalTip {
-  font-size: 30px;
-  margin-top: 5px;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 #totalTip::before {
   content: "Tip amount";
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  display: block;
+  display: inline-block;
   text-transform: uppercase;
+  /* margin: 0px 0px 0px 0px; */
+  border-bottom: 3px solid #39cccc;
+  border-radius: 5px;
+  /* padding: 0px 0px 0px 0px; */
 }
 
-#totalTip sup {
-  font-size: 20px;
-  top: -18px;
+#totalTip div:nth-child(1) {
+  width: 150px;
+  font-size: 25px;
+  /* border: 1px solid red;
+  border-bottom: 3px solid rgb(19, 56, 221); */
+  display: flex;
+  justify-content: center;
 }
+#each {
+  margin: 0px 5px;
+} /*
+#tipRs {
+  border-bottom: 3px solid rgb(19, 56, 221);
+}
+#tip {
+  border-bottom: 3px solid rgb(19, 56, 221);
+}
+#each {
+  /* border-bottom: 3px solid rgb(19, 56, 221); */
 
-#totalTip small {
-  font-size: 20px;
-  font-weight: bold;
-  display: block;
+/* div #totalTip::after {
+  border-bottom: 3px solid #39cccc;
+  border-radius: 5px;
+} */
+/* #tipRS { */
+/* content: "Rs. 0.00 each";
+  border-bottom: 3px solid rgb(19, 56, 221);
+  border-bottom-left-radius: 5px; */
+/* margin: 0px 0px 0px 60px; */
+/* position: fixed; */
+/* } */
+/* #tip { */
+/* border-bottom: 3px solid rgb(19, 56, 221); */
+/* margin: 0px 0px 0px 35px; */
+/* } */
+/* #each { */
+/* border-bottom: 3px solid rgb(19, 56, 221);
+  border-bottom-right-radius: 5px; */
+/* margin: 0px 0px 0px 25px; */
+/* position: relative; */
+/* } */
+div#totalTip #main {
+  border-bottom: 3px solid rgb(19, 56, 221);
+  border-radius: 5px;
 }
