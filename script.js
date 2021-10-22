@@ -15,7 +15,7 @@ function claculateTip() {
     numofPeople = 1;
     document.getElementById("each").style.display = "none";
   } else {
-    document.getElementById("each").style.display = "block";
+    document.getElementById("each").style.display = "flex";
   }
 
   // Claculate Tip
@@ -23,7 +23,7 @@ function claculateTip() {
   total = Math.round(total);
 
 //   Display the tip 
-  document.getElementById("totalTip").style.display = "block";
+  document.getElementById("totalTip").style.display = "flex";
   document.getElementById("tip").innerHTML = total;
 }
 
