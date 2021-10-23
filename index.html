@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TIP-CALCULATOR</title>
   </head>
   <link
     href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,400;1,400&display=swap"
@@ -21,13 +21,13 @@
     <div class="container">
       <h1>Tip Calculator</h1>
       <div id="calculator">
-        <p>How much was your bill?</p>
+        <p>How much was your bill?*</p>
         <p>
           <label for="billamt">Rs.</label>
           <input type="text" id="billamt" placeholder="Bill Amount" />
         </p>
-        <form>
-        <p>How was your service?</p>
+        <form><br>
+        <p>How was our service?*</p>
         <p>
           <label for="serviceQual"></label>
           <select id="serviceQual">
@@ -37,11 +37,13 @@
             <option value="0.05">05% - It was ok</option>
           </select>
         </form>
-        </p>
-        <p>How many people are sharing the bill?</p>
+        </p><br>
+        <p>How many people are sharing the bill?*</p>
         <input id="peopleamt" type="text" placeholder="Number of people" />
         <!-- <span>people</span> -->
-        <p><button id="calculate">Calculate!</button></p>
+        <p><button id="calculate">Give Away!</button></p><br>
+        <p>Any Feedback/Suggestion</p>
+        <input id="peopleamt" type="text" placeholder="Feedback/Suggestion" />
       </div>
       <!-- calculator end -->
 
