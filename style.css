@@ -111,7 +111,7 @@ button:active {
   position: relative;
   top: 1px;
 }
-#totalTip {
+#totalTip,#totalbill {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -131,6 +131,18 @@ button:active {
   /* padding: 0px 0px 0px 0px; */
 }
 
+#totalbill::before {
+  content: "Tip amount";
+  font-size: 22px;
+  font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+  /* margin: 0px 0px 0px 0px; */
+  border-bottom: 3px solid #39cccc;
+  border-radius: 5px;
+  /* padding: 0px 0px 0px 0px; */
+}
+
 #totalTip div:nth-child(1) {
   width: 150px;
   font-size: 25px;
@@ -139,7 +151,7 @@ button:active {
   display: flex;
   justify-content: center;
 }
-#each {
+#each,#each2 {
   margin: 0px 5px;
 } /*
 #tipRs {
