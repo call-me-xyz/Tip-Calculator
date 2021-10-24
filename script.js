@@ -14,8 +14,10 @@ function claculateTip() {
   if (numofPeople === "" || numofPeople <= 1) {
     numofPeople = 1;
     document.getElementById("each").style.display = "none";
+    document.getElementById("each2").style.display = "none";
   } else {
     document.getElementById("each").style.display = "flex";
+    document.getElementById("each2").style.display = "flex";
   }
 
   // Claculate Tip
@@ -25,11 +27,14 @@ function claculateTip() {
 //   Display the tip 
   document.getElementById("totalTip").style.display = "flex";
   document.getElementById("tip").innerHTML = total;
+  document.getElementById("totalbill").style.display = "flex";
+  document.getElementById("bill").innerHTML = Math.ceil(billAmt/numofPeople)+total;
 }
-
 // Hide the tip amount on load
 document.getElementById("totalTip").style.display = "none";
 document.getElementById("each").style.display = "none";
+document.getElementById("totalbill").style.display = "none";
+document.getElementById("each2").style.display = "none";
 
 // click to call function
 document.getElementById("calculate").onclick = function () {

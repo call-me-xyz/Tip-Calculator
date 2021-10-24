@@ -111,7 +111,17 @@ button:active {
   position: relative;
   top: 1px;
 }
-#totalTip,#totalbill {
+#totalTip {
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#totalbill {
+  padding: 5px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -132,7 +142,7 @@ button:active {
 }
 
 #totalbill::before {
-  content: "Tip amount";
+  content: "Bill amount";
   font-size: 22px;
   font-weight: bold;
   display: inline-block;
@@ -151,6 +161,16 @@ button:active {
   display: flex;
   justify-content: center;
 }
+
+#totalbill div:nth-child(1) {
+  width: 150px;
+  font-size: 25px;
+  /* border: 1px solid red;
+  border-bottom: 3px solid rgb(19, 56, 221); */
+  display: flex;
+  justify-content: center;
+}
+
 #each,#each2 {
   margin: 0px 5px;
 } /*
@@ -185,6 +205,11 @@ button:active {
 /* position: relative; */
 /* } */
 div#totalTip #main {
+  border-bottom: 3px solid rgb(19, 56, 221);
+  border-radius: 5px;
+}
+
+div#totalbill #main2 {
   border-bottom: 3px solid rgb(19, 56, 221);
   border-radius: 5px;
 }
